@@ -1,0 +1,166 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Models\Interfaces\" />
+    <None Remove="Models\Repository\" />
+    <None Remove="Controllers\" />
+    <None Remove="Views\" />
+    <None Remove="Views\Products\" />
+    <None Remove="Data\" />
+    <None Remove="Migrations\" />
+    <None Remove="Views\Shared\" />
+    <None Remove="Views\Home\" />
+    <None Remove="Views\ShoppingCart\" />
+    <None Remove="Views\Orders\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Models\Interfaces\" />
+    <Folder Include="Models\Repository\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Products\" />
+    <Folder Include="Data\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="Views\Shared\" />
+    <Folder Include="wwwroot\bootstrap\" />
+    <Folder Include="wwwroot\dropdown\" />
+    <Folder Include="wwwroot\formoid\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\mobirise\" />
+    <Folder Include="wwwroot\parallax\" />
+    <Folder Include="wwwroot\smoothscroll\" />
+    <Folder Include="wwwroot\socicon\" />
+    <Folder Include="wwwroot\theme\" />
+    <Folder Include="wwwroot\web\" />
+    <Folder Include="wwwroot\ytplayer\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="Views\ShoppingCart\" />
+    <Folder Include="Views\Orders\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Remove="wwwroot\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Remove="wwwroot\bootstrap\css\bootstrap.min.css" />
+    <Content Remove="wwwroot\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Remove="wwwroot\bootstrap\" />
+    <Content Remove="wwwroot\dropdown\css\style.css" />
+    <Content Remove="wwwroot\dropdown\js\navbar-dropdown.js" />
+    <Content Remove="wwwroot\dropdown\" />
+    <Content Remove="wwwroot\formoid\formoid.min.js" />
+    <Content Remove="wwwroot\formoid\" />
+    <Content Remove="wwwroot\images\anna-bratiychuk-3w2aurzeesu-unsplash-815x1223.jpg" />
+    <Content Remove="wwwroot\images\brent-ninaber-vlpefxuqynm-unsplash-2000x1125.jpg" />
+    <Content Remove="wwwroot\images\coffee-beans-2258839-960.jpg" />
+    <Content Remove="wwwroot\images\coffee-icon-sign-symbol-design-free-png.webp" />
+    <Content Remove="wwwroot\images\giancarlo-duarte-rthw0pwclhw-unsplash-815x543.jpg" />
+    <Content Remove="wwwroot\images\jeremy-yap-jn-hagwe4yw-unsplash-815x1223.jpg" />
+    <Content Remove="wwwroot\images\mbr-1920x1372.jpg" />
+    <Content Remove="wwwroot\images\mohammad-amirahmadi-tk2ifgn60xo-unsplash-815x1019.jpg" />
+    <Content Remove="wwwroot\images\nathan-dumlao-nbjho6wmrww-unsplash-815x1223.jpg" />
+    <Content Remove="wwwroot\images\tetiana-shyshkina-4lqjr8gu-bg-unsplash-815x1222.jpg" />
+    <Content Remove="wwwroot\images\" />
+    <Content Remove="wwwroot\mobirise\css\mbr-additional.css" />
+    <Content Remove="wwwroot\mobirise\" />
+    <Content Remove="wwwroot\parallax\jarallax.css" />
+    <Content Remove="wwwroot\parallax\jarallax.js" />
+    <Content Remove="wwwroot\parallax\" />
+    <Content Remove="wwwroot\smoothscroll\smooth-scroll.js" />
+    <Content Remove="wwwroot\smoothscroll\" />
+    <Content Remove="wwwroot\socicon\css\styles.css" />
+    <Content Remove="wwwroot\socicon\fonts\socicon.eot" />
+    <Content Remove="wwwroot\socicon\fonts\socicon.svg" />
+    <Content Remove="wwwroot\socicon\fonts\socicon.ttf" />
+    <Content Remove="wwwroot\socicon\fonts\socicon.woff" />
+    <Content Remove="wwwroot\socicon\fonts\socicon.woff2" />
+    <Content Remove="wwwroot\socicon\" />
+    <Content Remove="wwwroot\theme\css\style.css" />
+    <Content Remove="wwwroot\theme\js\script.js" />
+    <Content Remove="wwwroot\theme\" />
+    <Content Remove="wwwroot\web\assets\mobirise-icons-bold\mobirise-icons-bold.css" />
+    <Content Remove="wwwroot\web\assets\mobirise-icons-bold\mobirise-icons-bold.eot" />
+    <Content Remove="wwwroot\web\assets\mobirise-icons-bold\mobirise-icons-bold.svg" />
+    <Content Remove="wwwroot\web\assets\mobirise-icons-bold\mobirise-icons-bold.ttf" />
+    <Content Remove="wwwroot\web\assets\mobirise-icons-bold\mobirise-icons-bold.woff" />
+    <Content Remove="wwwroot\web\assets\mobirise-icons2\mobirise2.css" />
+    <Content Remove="wwwroot\web\assets\mobirise-icons2\mobirise2.eot" />
+    <Content Remove="wwwroot\web\assets\mobirise-icons2\mobirise2.svg" />
+    <Content Remove="wwwroot\web\assets\mobirise-icons2\mobirise2.ttf" />
+    <Content Remove="wwwroot\web\assets\mobirise-icons2\mobirise2.woff" />
+    <Content Remove="wwwroot\web\" />
+    <Content Remove="wwwroot\ytplayer\index.js" />
+    <Content Remove="wwwroot\ytplayer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\bootstrap\css\bootstrap-grid.min.css" />
+    <None Include="wwwroot\bootstrap\css\bootstrap-reboot.min.css" />
+    <None Include="wwwroot\bootstrap\css\bootstrap.min.css" />
+    <None Include="wwwroot\bootstrap\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\dropdown\css\style.css" />
+    <None Include="wwwroot\dropdown\js\navbar-dropdown.js" />
+    <None Include="wwwroot\formoid\formoid.min.js" />
+    <None Include="wwwroot\images\anna-bratiychuk-3w2aurzeesu-unsplash-815x1223.jpg" />
+    <None Include="wwwroot\images\brent-ninaber-vlpefxuqynm-unsplash-2000x1125.jpg" />
+    <None Include="wwwroot\images\coffee-beans-2258839-960.jpg" />
+    <None Include="wwwroot\images\coffee-icon-sign-symbol-design-free-png.webp" />
+    <None Include="wwwroot\images\giancarlo-duarte-rthw0pwclhw-unsplash-815x543.jpg" />
+    <None Include="wwwroot\images\jeremy-yap-jn-hagwe4yw-unsplash-815x1223.jpg" />
+    <None Include="wwwroot\images\mbr-1920x1372.jpg" />
+    <None Include="wwwroot\images\mohammad-amirahmadi-tk2ifgn60xo-unsplash-815x1019.jpg" />
+    <None Include="wwwroot\images\nathan-dumlao-nbjho6wmrww-unsplash-815x1223.jpg" />
+    <None Include="wwwroot\images\tetiana-shyshkina-4lqjr8gu-bg-unsplash-815x1222.jpg" />
+    <None Include="wwwroot\mobirise\css\mbr-additional.css" />
+    <None Include="wwwroot\parallax\jarallax.css" />
+    <None Include="wwwroot\parallax\jarallax.js" />
+    <None Include="wwwroot\smoothscroll\smooth-scroll.js" />
+    <None Include="wwwroot\socicon\css\styles.css" />
+    <None Include="wwwroot\socicon\fonts\socicon.eot" />
+    <None Include="wwwroot\socicon\fonts\socicon.svg" />
+    <None Include="wwwroot\socicon\fonts\socicon.ttf" />
+    <None Include="wwwroot\socicon\fonts\socicon.woff" />
+    <None Include="wwwroot\socicon\fonts\socicon.woff2" />
+    <None Include="wwwroot\theme\css\style.css" />
+    <None Include="wwwroot\theme\js\script.js" />
+    <None Include="wwwroot\web\assets\mobirise-icons-bold\mobirise-icons-bold.css" />
+    <None Include="wwwroot\web\assets\mobirise-icons-bold\mobirise-icons-bold.eot" />
+    <None Include="wwwroot\web\assets\mobirise-icons-bold\mobirise-icons-bold.svg" />
+    <None Include="wwwroot\web\assets\mobirise-icons-bold\mobirise-icons-bold.ttf" />
+    <None Include="wwwroot\web\assets\mobirise-icons-bold\mobirise-icons-bold.woff" />
+    <None Include="wwwroot\web\assets\mobirise-icons2\mobirise2.css" />
+    <None Include="wwwroot\web\assets\mobirise-icons2\mobirise2.eot" />
+    <None Include="wwwroot\web\assets\mobirise-icons2\mobirise2.svg" />
+    <None Include="wwwroot\web\assets\mobirise-icons2\mobirise2.ttf" />
+    <None Include="wwwroot\web\assets\mobirise-icons2\mobirise2.woff" />
+    <None Include="wwwroot\ytplayer\index.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="wwwroot\images\hashes.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
